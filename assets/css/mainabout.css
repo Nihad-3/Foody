@@ -1,0 +1,519 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.contanier {
+  width: 80%;
+  margin: 0 auto;
+}
+
+header {
+  padding-top: 30px;
+  background-image: url("/assets/img/hero.webp");
+  height: 800px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+header .contanier .overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+header .contanier .row {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+}
+header .contanier .row .hero-block a h2 {
+  font-size: 40px;
+  color: #FFFFFF;
+  letter-spacing: 8px;
+}
+header .contanier .row .nav-bar .nav-list {
+  display: flex;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+header .contanier .row .nav-bar .nav-list li {
+  padding: 10px 5px;
+}
+header .contanier .row .nav-bar .nav-list li:hover a {
+  color: #FF7404;
+}
+header .contanier .row .nav-bar .nav-list li a {
+  font-size: 20px;
+  color: #FFFFFF;
+}
+header .contanier .row .nav-bar .nav-list li .different-nav-link {
+  color: #FF7404;
+}
+header .contanier .row .nav-bar .nav-list .dropdown .nav-link {
+  padding-bottom: 40px;
+}
+header .contanier .row .nav-bar .nav-list .dropdown:hover .dropdown-content {
+  display: block;
+}
+header .contanier .row .nav-bar .nav-list .dropdown .dropdown-content {
+  position: absolute;
+  z-index: 1000;
+  width: 200px;
+  top: 100%;
+  left: 55%;
+  display: none;
+  border-radius: 10px;
+  background-color: white;
+  transform: translateX(-60%);
+}
+header .contanier .row .nav-bar .nav-list .dropdown .dropdown-content .shape-dropdown {
+  position: absolute;
+  width: 18px;
+  background-color: #FFFFFF;
+  height: 18px;
+  transform: rotate(45deg);
+  top: -9px;
+  left: 18px;
+  border-right: none;
+  border-bottom: none;
+}
+header .contanier .row .nav-bar .nav-list .dropdown .dropdown-content .dropdown-nav-bar {
+  padding: 10px 0;
+}
+header .contanier .row .nav-bar .nav-list .dropdown .dropdown-content .dropdown-nav-bar li {
+  position: relative;
+  z-index: 100;
+  background-color: white;
+}
+header .contanier .row .nav-bar .nav-list .dropdown .dropdown-content .dropdown-nav-bar li:hover {
+  background-color: #FF7404;
+}
+header .contanier .row .nav-bar .nav-list .dropdown .dropdown-content .dropdown-nav-bar li:hover a {
+  color: white;
+}
+header .contanier .row .nav-bar .nav-list .dropdown .dropdown-content .dropdown-nav-bar li .dropdown-link {
+  font-size: 18px;
+  color: black;
+}
+header .contanier .row .head-link {
+  background-color: #FF7404;
+  padding: 10px 20px;
+}
+header .contanier .row .head-link a {
+  font-size: 20px;
+  color: white;
+}
+header .contanier .foody-news-block {
+  background: none;
+  display: flex;
+  height: 400px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+  z-index: 100;
+  margin-top: 40px;
+}
+header .contanier .foody-news-block h1 {
+  text-align: center;
+  font-size: 85px;
+  width: 70%;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+}
+header .contanier .foody-news-block .foody-news-block-par {
+  font-size: 20px;
+  margin-bottom: 30px;
+  color: #FFFFFF;
+}
+header .contanier .foody-news-block .foody-news-block-par a {
+  color: #FFFFFF;
+}
+header .contanier .foody-news-block .foody-news-block-link {
+  padding: 10px 30px;
+  font-size: 20px;
+  color: white;
+  background: none;
+  border: 2px solid white;
+}
+header .contanier .foody-news-block .foody-news-block-link:hover {
+  background-color: white;
+  color: black;
+}
+
+.restaurant-section {
+  margin-bottom: 350px;
+  padding-top: 100px;
+  background-color: #F8F9FA;
+  position: relative;
+}
+.restaurant-section::after {
+  content: "";
+  position: absolute;
+  overflow: hidden;
+  top: -50%;
+  left: 0;
+  height: 50%;
+  width: 100%;
+  -webkit-clip-path: polygon(100% 57%, 100% 57%, 100% 100%, 0% 100%);
+          clip-path: polygon(100% 57%, 100% 57%, 100% 100%, 0% 100%);
+  background: #F8F9FA;
+}
+.restaurant-section .contanier .restaurant-block {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  background-color: #F8F9FA;
+  justify-content: center;
+}
+.restaurant-section .contanier .restaurant-block .restaurant-head-block {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  gap: 10px;
+}
+.restaurant-section .contanier .restaurant-block .restaurant-head-block .orange-line {
+  width: 120px;
+  height: 3px;
+  background-color: #FF7404;
+}
+.restaurant-section .contanier .restaurant-block .restaurant-head-block .head-block-title {
+  font-size: 50px;
+}
+.restaurant-section .contanier .restaurant-block .restaurant-head-block .head-block-par {
+  width: 80%;
+  color: #8D929B;
+  line-height: 40px;
+  font-size: 24px;
+  text-align: center;
+}
+.restaurant-section .contanier .restaurant-block .restaurant-content {
+  width: 100%;
+  height: 600px;
+  display: flex;
+}
+.restaurant-section .contanier .restaurant-block .restaurant-content .content-parent {
+  width: 33.3%;
+  padding: 30px 15px;
+}
+.restaurant-section .contanier .restaurant-block .restaurant-content .content-parent .content-img-blog {
+  width: 100%;
+  height: 100%;
+}
+.restaurant-section .contanier .restaurant-block .restaurant-content .content-parent .content-img-blog img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.restaurant-section .contanier .restaurant-block .restaurant-content .two-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 33.3%;
+  height: 100%;
+  padding: 15px 10px;
+}
+.restaurant-section .contanier .restaurant-block .restaurant-content .two-content .content-img-block-one {
+  margin: -15px 10px;
+  height: 50%;
+  width: 100%;
+}
+.restaurant-section .contanier .restaurant-block .restaurant-content .two-content .content-img-block-one .content-block-img {
+  width: 100%;
+  height: 100%;
+}
+.restaurant-section .contanier .restaurant-block .restaurant-content .two-content .content-img-block-one .content-block-img img {
+  width: 100%;
+  height: 100%;
+}
+.restaurant-section .contanier .restaurant-block .restaurant-content .two-content .content-img-block-two {
+  height: 50%;
+  width: 100%;
+  margin: -15px 10px;
+}
+.restaurant-section .contanier .restaurant-block .restaurant-content .two-content .content-img-block-two .content-block-img {
+  width: 100%;
+  height: 100%;
+}
+.restaurant-section .contanier .restaurant-block .restaurant-content .two-content .content-img-block-two .content-block-img img {
+  width: 100%;
+  height: 100%;
+}
+.restaurant-section .contanier .restaurant-block .restaurant-info-block {
+  width: 100%;
+  display: flex;
+  margin-top: 30px;
+}
+.restaurant-section .contanier .restaurant-block .restaurant-info-block .first-info-block {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 25px 15px;
+  line-height: 30px;
+}
+.restaurant-section .contanier .restaurant-block .restaurant-info-block .first-info-block .first-info-block-par {
+  font-size: 20px;
+  color: #8D929B;
+}
+
+.chefs-section {
+  margin-bottom: 300px;
+  position: relative;
+  background-color: #F8F9FA;
+}
+.chefs-section::after {
+  content: "";
+  position: absolute;
+  overflow: hidden;
+  top: -50%;
+  left: 0;
+  height: 50%;
+  width: 100%;
+  -webkit-clip-path: polygon(100% 57%, 100% 57%, 100% 100%, 0% 100%);
+          clip-path: polygon(100% 57%, 100% 57%, 100% 100%, 0% 100%);
+  background-color: #F8F9FA;
+}
+.chefs-section::before {
+  content: "";
+  position: absolute;
+  overflow: hidden;
+  bottom: -13%;
+  left: 0;
+  height: 30%;
+  width: 100%;
+  background-color: #F8F9FA;
+  -webkit-clip-path: polygon(100% 57%, 100% 57%, 0 100%, 0 57%);
+          clip-path: polygon(100% 57%, 100% 57%, 0 100%, 0 57%);
+}
+.chefs-section .contanier .chefs-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #F8F9FA;
+  cursor: default;
+}
+.chefs-section .contanier .chefs-block .chefs-header {
+  padding: 20px;
+  display: flex;
+  gap: 10px;
+  height: 150px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.chefs-section .contanier .chefs-block .chefs-header .orange-line {
+  background-color: #FF7404;
+  width: 100px;
+  height: 3px;
+}
+.chefs-section .contanier .chefs-block .chefs-header h2 {
+  font-size: 45px;
+}
+.chefs-section .contanier .chefs-block .chefs-album {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #F8F9FA;
+  margin-bottom: 300px;
+  padding: 0 15px;
+}
+.chefs-section .contanier .chefs-block .chefs-album .chefs-parent-cart {
+  width: 33.3%;
+  height: 100%;
+  margin: 0 -15px;
+}
+.chefs-section .contanier .chefs-block .chefs-album .chefs-parent-cart .chefs-card {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+}
+.chefs-section .contanier .chefs-block .chefs-album .chefs-parent-cart .chefs-card:hover .chefs-img img {
+  transform: scale(1.2);
+}
+.chefs-section .contanier .chefs-block .chefs-album .chefs-parent-cart .chefs-card .chefs-img {
+  cursor: pointer;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  height: 80%;
+}
+.chefs-section .contanier .chefs-block .chefs-album .chefs-parent-cart .chefs-card .chefs-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.chefs-section .contanier .chefs-block .chefs-album .chefs-parent-cart .chefs-card .chefs-info {
+  display: flex;
+  height: 20%;
+  position: relative;
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.chefs-section .contanier .chefs-block .chefs-album .chefs-parent-cart .chefs-card .chefs-info h3 {
+  font-size: 25px;
+}
+.chefs-section .contanier .chefs-block .chefs-album .chefs-parent-cart .chefs-card .chefs-info p {
+  font-size: 20px;
+}
+
+.subsribe-section {
+  margin-bottom: 80px;
+}
+.subsribe-section .contanier .subsribe-block {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  padding: 30px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.subsribe-section .contanier .subsribe-block h3 {
+  font-size: 35px;
+}
+.subsribe-section .contanier .subsribe-block p {
+  line-height: 40px;
+  text-align: center;
+  width: 60%;
+  font-size: 23px;
+}
+.subsribe-section .contanier .subsribe-block .form-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 70%;
+}
+.subsribe-section .contanier .subsribe-block .form-block form {
+  width: 50%;
+}
+.subsribe-section .contanier .subsribe-block .form-block form input {
+  width: 100%;
+  padding: 15px;
+  padding-right: 50px;
+}
+.subsribe-section .contanier .subsribe-block .form-block a {
+  padding: 15px;
+  color: #FFFFFF;
+  background-color: #FF7404;
+}
+
+footer .contanier .foot-block {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 15px;
+  justify-content: space-between;
+}
+footer .contanier .foot-block .foot-parent {
+  width: 33.3%;
+  margin: 0 -15px;
+  display: flex;
+}
+footer .contanier .foot-block .foot-parent .foot-info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  padding: 20px 10px;
+  gap: 20px;
+}
+footer .contanier .foot-block .foot-parent .foot-info .foot-head {
+  font-size: 20px;
+}
+footer .contanier .foot-block .foot-parent .foot-info .foot-par {
+  font-size: 20px;
+}
+footer .contanier .foot-block .foot-parent .foot-info .foot-icon {
+  width: 100%;
+  display: flex;
+  gap: 15px;
+  padding: 10px;
+}
+footer .contanier .foot-block .foot-parent .foot-info .foot-icon i {
+  color: #FF7404;
+  font-size: 20px;
+}
+footer .contanier .foot-block .foot-parent .foot-info .foot-hours {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+footer .contanier .foot-block .foot-parent .foot-info .foot-hours .foot-head {
+  margin-bottom: 15px;
+}
+footer .contanier .foot-block .foot-parent .foot-info .foot-hours .week-day-par {
+  font-size: 15px;
+}
+footer .contanier .foot-block .foot-parent .foot-info .foot-hours .hours-par {
+  color: #8D929B;
+}
+footer .contanier .foot-block .foot-parent .foot-info .contact {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+footer .contanier .foot-block .foot-parent .foot-info .contact .foot-head {
+  margin-bottom: 15px;
+}
+footer .contanier .foot-block .foot-parent .foot-info .contact .hours-par {
+  color: #868E96;
+}
+footer .contanier .foot-block .foot-parent .foot-info .iphone {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+footer .contanier .foot-block .foot-parent .foot-info .iphone .hours-par {
+  color: #868E96;
+}
+footer .contanier .foot-block .foot-parent .foot-info .email {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+footer .contanier .foot-block .foot-parent .foot-info .email .hours-par {
+  color: #868E96;
+}
+footer .contanier .foot-block .foot-parent .foot-info ul li {
+  padding: 8px;
+}
+footer .contanier .foot-block .foot-parent .foot-info ul li a {
+  color: #FF7404;
+  font-size: 15px;
+}
+footer .contanier .foot-block .finish {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  padding: 40px;
+}
+footer .contanier .foot-block .finish .finish-par {
+  font-size: 20px;
+}
+footer .contanier .foot-block .finish .finish-par a {
+  color: #FF7404;
+}
+footer .contanier .foot-block .finish .finish-par i {
+  color: red;
+}/*# sourceMappingURL=mainabout.css.map */
